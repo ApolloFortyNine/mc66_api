@@ -67,7 +67,7 @@ class MC66:
     s = socket.socket(af, socktype, proto)
     s.settimeout(1)
     s.connect(sa)
-    print(cmd)
+    # print(cmd)
     s.send(cmd)
     s.recv(256)
     s.close()
